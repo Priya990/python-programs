@@ -1,0 +1,397 @@
+#FLOAT EXAMPLE
+print(float(3)) #3.0
+#print(float(50+2j))
+print(float(True)) #1.0
+print(float(False)) #0.0
+#print(float(4.22))
+print(int(4.22))
+print(float("4"))
+
+print(bool(0)) #False
+print(bool(15)) #True
+print(bool(3.14)) #True
+print(bool(0.0)) #False
+print(bool(1+2j))#True
+print(bool(0+0j))#False
+print(bool(-1))#True
+print(bool(False))#False
+print(bool(True))#True
+print(bool(" "))#True
+
+#decision making statements
+.simple if
+.else if
+.if else
+
+.simple is syntax
+
+if condition:
+       #statement
+
+#WAP to accept any one digit and check the digit is positive, negative, zero
+n=int(input("Enter any single digit:"))#5
+if n>0:
+	print("positive number")
+if n<0:
+	print("negative number")
+if n==0:
+	print("zero")
+
+#WAP to accept five numbers in 5 different variables and check max number and print
+n1=int(input("Enter value of n1:"))#6
+n2=int(input("Enter value of n2:"))#5
+n3=int(input("Enter value of n3:"))#4
+n4=int(input("Enter value of n4:"))#2
+n5=int(input("Enter value of n5:"))#1
+
+if n1>n2 and n1>n3 and n1>n4 and n1>n5:
+	print("N1 is max value")
+if n2>n1 and n2>n3 and n2>n4 and n2>n5:
+	print("N2 is max value")
+if n3>n1 and n3>n2 and n3>n4 and n3>n5:
+	print("N3 is max value")
+if n4>n1 and n4>n2 and n4>n3 and n4>n5:
+	print("N4 is max value")
+if n5>n1 and n5>n2 and n5>n3 and n5>n4:
+	print("N5 is max value")
+
+#WAP to accept three paper marks and calculate total, percentage and if percentage is greater then or equal to 60 so he/she is eligible for placement drive
+math=int(input("Enter marks of math:"))
+chem=int(input("Enter marks of chem:"))
+phy=int(input("Enter marks of phy:"))
+total=phy+chem+math
+percentage=total/3.0
+print("Total =",total)
+if percentage>=60:
+	print("you are eligible for placement drive")
+else:
+	print("you are not eligible")
+
+#WAP to calculate simple interest
+pa=int(input("Enter principle amount:"))
+roi=int(input("Enter rate of interest:"))
+time=int(input("Enter the loan amount duration:"))
+
+si=pa*roi*time/100
+print("Simple interest=",si)
+
+#WAP to enter height of user in feet and convert it into inch and centimeter
+h=int(input("Enter the height of feet:"))
+inch=h*12
+cm=inch*2.54
+print("inch=",inch)
+print("centimeter=",cm)
+
+#WAP to take centigrade temperature and convert it into Fahrenheit temperature
+centi=int(input("Enter centigrade temperature centi:"))
+f=1.8*centi+240
+print("value of f=",f)
+
+#indexing name
+name="priya"
+#indexing=01234
+
+print(name[0]) #p
+print(name[1])#r
+print(name[-1])#a
+print(name[4])
+print(name[0:4])
+print(name[1:])
+print(name[:4])
+print(name[:])
+print(name[1:4:2])
+print(name[::-1])
+
+#find() return the starting index no of string if it is found else if the string not found so it return -1
+s="help4code is a best platform for praticing prg"
+print(s.find("help4code"))
+print(s.find("python"))
+print(s.find("prg"))
+
+#
+s="priya","rakshita","shivu"
+m='|'.join(s)
+print(m)
+
+#
+s="Python is a High level prgramming Language"
+print(s.lower())
+print(s.upper())
+print(s.swapcase())
+print(s.title())
+print(s.capitalize())
+
+#
+phy=50
+chem=60
+math=70
+print("physics={}  chemistry={} math={}".format(phy,chem,math))
+print("physics={0}  chemistry={1} math{2}".format(phy,chem,math))
+print("physics={x}  chemistry={y} math{z}".format(x=phy,y=chem,z=math))
+total=phy+chem+math
+print("Total Marks",f"{total}")
+print("Roll No=","7".zfill(4))
+
+#Bodmas
+a=50
+b=30
+c=20
+d=10
+print((a+b)*c/d)
+print((a-b)*(c/d))
+print(a+(b*c)/d)
+
+#
+mylist=["Priya","rakshita","shivu","Sanjana","spoorti",28,"praveen",14.28,"sai"]
+print(mylist)
+
+print(type(mylist))
+print(mylist[0])
+print(mylist[1])
+print(mylist[2])
+print(mylist[-1])
+print(mylist[2:5])
+print(mylist[:5])
+print(mylist[1:])
+print(mylist[1:8:2])
+print(mylist[:])
+print(mylist[::-1])
+
+#print(mylist[::-1])
+
+mylist[2]="Akshay"
+print(mylist)
+#how to change the index value
+
+'''print(mylist[0])
+print(mylist[1])
+print(mylist[2])
+print(mylist[-1])
+print(mylist[2:5])
+print(mylist[:5])
+print(mylist[1:])
+print(mylist[1:8:2])
+print(mylist[:])
+print(mylist[::-1])
+
+mylist=["Priya","rakshita","shivu","Sanjana","spoorti",28,"praveen",14.28,"sai"]
+print(mylist)
+
+mylist.append('harsh')
+mylist.append('laxman')
+print(mylist)
+
+#
+mylist=[['priya','shivu'],['85,56'],[440022,"yyy"]]
+print("example of multidimensional list")
+print(mylist)
+#print(mlist[row][col])
+print(mylist[0][0])
+print(mylist[0][1])
+print(mylist[1][0])
+print(mylist[2][0])
+print(mylist[2][1])
+
+list1=["Priya","shivu"]
+print(list*2)
+list2=[50,25.50]
+print(list1+list2)
+
+v=[1,2,3,4,5]
+for i in v:
+    print(i)
+
+#
+list3=[50,25.50,'priya']
+list3.clear()
+print(list3)
+
+#typecasting=converting str into list
+name="priya"
+print(name)
+myname=list(name)
+print(myname)
+
+#
+mylist=[40,30,20,10]
+mylist.reverse()
+print(mylist)
+
+
+#sorting example(by default sorts in ascending)
+mylist=[44,22,77,0,9,88]
+mylist.sort()
+print(mylist)
+
+#sorting in decending order
+mylist=[44,22,77,0,9,88]
+mylist.sort(reverse=True) 
+print(mylist)
+
+#list having same address
+mylist=[44,22,77,0,9,88]
+newlist=mylist
+print(id(mylist))
+print(id(newlist))
+
+
+#Tuple
+mytuple=("priya","sanjana","rakshita","shivu","praveen","rajesh",23,3.15,77,"sai")
+print(mytuple)
+print(type(mytuple))
+
+#membership operator:
+#1. in
+#2. not in
+
+print('z' in "Priya")
+print('z'  not in "Priya")
+print('a'  in "Priya")
+
+mylist=[3,5,2,8,9]
+print(3 in mylist)
+
+#
+a=10
+b=10
+
+print(id(a))
+print(id(b))
+
+print(a is b)
+print(a is not b)
+
+
+*set datatypes
+#
+myset={1,2,"sanjay",5.66,"rahul","ayush","ramesh","ankit",'rishi'}
+print(myset)
+print(type(myset))
+
+#
+myset={1,2,"sanjay",5.66,"rahul","ayush","ramesh","ankit",'rishi'}
+print(myset)
+print(type(myset))
+
+myset.add(60)
+print(myset)
+
+#shows error
+myset.remove(3)
+print(myset)
+#no error
+myset.discard(3)
+print(myset)
+
+#union
+myset={10,20,30,40}
+yorset={"priya","sai"}
+
+newset=myset.union(yorset)
+print(newset)
+
+#intersection
+myset={10,20,30,40}
+yorset={10,50,60,30}
+
+print(myset.intersection(yorset))
+
+#
+#difference() method this will eturn the element
+#present in first set but not in second set
+myset={10,20,30,40}
+yorset={10,50,60,30}
+
+print(myset.difference(yorset))
+
+#
+#clear() we can use to clear data
+#pop() method is used to remove object
+
+myset={10,20,30,40}
+print(myset.pop())
+
+#Nested if else:
+if condition-1:
+       if condition-2:
+               #statement
+       else:
+               #statment
+else:
+  
+       if condition-3:
+               #statement
+       else:
+               #statment
+
+#WAP to accept three numbers like a,b,c and find max number
+a=int(input("Enter the value of a:"))
+b=int(input("Enter the value of b:"))
+c=int(input("Enter the value of c:"))
+if a>b:
+    if a>c:
+        print("a is greater")
+    else:
+        print("c is greater")
+
+else:
+    if b>c:
+        print("b is greater")
+
+    else:
+        print("c is greater")
+
+#WAP to accept three numbers like a,b,c and find min number
+=int(input("Enter the value of a:"))
+b=int(input("Enter the value of b:"))
+c=int(input("Enter the value of c:"))
+if a<b:
+    if a<c:
+        print("a is minimum")
+    else:
+        print("c is minimum")
+
+else:
+    if b<c:
+        print("b is minimum")
+
+    else:
+        print("c is 5 minimum")
+
+#To get tables from 2 to 10
+for i in range(1,11):
+    print(i*2," ",i*3," ",i*4," ",i*5," ",i*6," ",i*7," ",i*8," ",i*9," ",i*10)
+#
+for i in range(1,11):
+    print(i*2," ",i*3," ",i*4," ",i*5," ",i*6," ",i*7," ",i*8," ",i*9," ",i*10 )
+
+print("---------------------------------------------------------------\n")
+   
+for i in range(11,20):
+    print(i*11," ",i*12," ",i*13," ",i*14," ",i*15," ",i*16," ",i*17," ",i*18," ",i*19)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
